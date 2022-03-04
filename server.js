@@ -13,7 +13,7 @@ const {uuid} =require("uuidv4");
 // initialize Firestore and set project id from env var
 const firestore = new Firestore(
     {
-        projectId: process.env.GOOGLE_CLOUD_PROJECT
+        projectId: process.env.GOOGLE_CLOUD_PROJECT || 'roi-dtc-march-u308'
     }
 );
 
